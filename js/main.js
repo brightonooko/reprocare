@@ -444,7 +444,7 @@
       if (err) err.classList.toggle('visible', show);
     }
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       let valid = true;
 
@@ -464,10 +464,42 @@
 
       if (!valid) return;
 
-      if (feedback) {
-        feedback.classList.add('show');
-        form.reset();
-        setTimeout(() => feedback.classList.remove('show'), 7000);
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      try {
+        const encoded = new URLSearchParams(new FormData(form)).toString();
+        const host = window.location.hostname;
+        const isLocalPreview =
+          !window.location.protocol.startsWith('http') ||
+          host === 'localhost' ||
+          host === '127.0.0.1' ||
+          /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host);
+
+        if (!isLocalPreview) {
+          const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encoded
+          });
+          if (!res.ok) throw new Error('Submission failed');
+        }
+
+        if (feedback) {
+          feedback.classList.add('show');
+          form.reset();
+          setTimeout(() => feedback.classList.remove('show'), 7000);
+        }
+      } catch (err) {
+        if (feedback) {
+          feedback.classList.add('show');
+          const enSpan = feedback.querySelector('.en-text');
+          const swSpan = feedback.querySelector('.sw-text');
+          if (enSpan) enSpan.textContent = 'Could not send right now. Please try again or email info@reprocare.health directly.';
+          if (swSpan) swSpan.textContent = 'Hitilafu ya mtandao imetokea. Tafadhali jaribu tena au tuandikie kupitia info@reprocare.health.';
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
 
