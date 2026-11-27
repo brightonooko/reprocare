@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReproCare — Trusted Women's Reproductive Health Guide</title>
+  <meta name="description"
+    content="ReproCare offers clear, bilingual (English & Kiswahili) reproductive health education for women. Explore guides on PCOS, endometriosis, menstrual health, fertility, pregnancy, contraception, cervical cancer, and menopause." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Skip to main content</a>
+
+  <div class="notice-bar" role="note">
+    <div class="container notice-bar-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="16" x2="12" y2="12" />
+        <line x1="12" y1="8" x2="12.01" y2="8" />
+      </svg>
+      <p data-i18n="disclaimer_text">ReproCare provides educational health information only and is not a substitute for professional medical advice. Always consult a qualified healthcare provider.</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-link" aria-label="ReproCare Home">
+        <span class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20.5C7.6 17.4 5 14 5 10.4 5 7.2 7.4 5 10.1 5c1.2 0 1.9.7 1.9.7S12.7 5 13.9 5C16.6 5 19 7.2 19 10.4c0 3.6-2.6 7-7 10.1Z" />
+            <path d="M12 9v4.5M9.75 11.25h4.5" />
+          </svg>
+        </span>
+        <span class="brand-wordmark">Repro<em>Care</em></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a href="reproductive-system.html" class="nav-link" data-i18n="nav_repro">Anatomy &amp; Cycle</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#conditions" class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              <span data-i18n="nav_conditions">Conditions</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown-panel">
+                <a href="conditions/pcos.html" class="dropdown-link">
+                  <strong data-i18n="cond_pcos">PCOS</strong>
+                  <span data-i18n="cond_pcos_short">Hormones, cysts &amp; cycle balance</span>
+                </a>
+                <a href="conditions/endometriosis.html" class="dropdown-link">
+                  <strong data-i18n="cond_endo">Endometriosis</strong>
+                  <span data-i18n="cond_endo_short">Pelvic pain &amp; treatment options</span>
+                </a>
+                <a href="conditions/menstrual-health.html" class="dropdown-link">
+                  <strong data-i18n="cond_menstrual">Menstrual Health</strong>
+                  <span data-i18n="cond_menstrual_short">Normal periods, care &amp; tracking</span>
+                </a>
+                <a href="conditions/fertility.html" class="dropdown-link">
+                  <strong data-i18n="cond_fertility">Fertility</strong>
+                  <span data-i18n="cond_fertility_short">Ovulation &amp; conception support</span>
+                </a>
+                <a href="conditions/pregnancy.html" class="dropdown-link">
+                  <strong data-i18n="cond_pregnancy">Pregnancy</strong>
+                  <span data-i18n="cond_pregnancy_short">Trimesters &amp; antenatal care</span>
+                </a>
+                <a href="conditions/contraception.html" class="dropdown-link">
+                  <strong data-i18n="cond_contraception">Contraception</strong>
+                  <span data-i18n="cond_contraception_short">Compare family planning methods</span>
+                </a>
+                <a href="conditions/cervical-cancer.html" class="dropdown-link">
+                  <strong data-i18n="cond_cervical">Cervical Cancer</strong>
+                  <span data-i18n="cond_cervical_short">HPV vaccination &amp; screening</span>
+                </a>
+                <a href="conditions/menopause.html" class="dropdown-link">
+                  <strong data-i18n="cond_menopause">Menopause</strong>
+                  <span data-i18n="cond_menopause_short">Perimenopause &amp; midlife health</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link" data-i18n="nav_faqs">FAQs</a></li>
+          <li class="nav-item"><a href="find-help.html" class="nav-link" data-i18n="nav_findhelp">Find Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+        </div>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-drawer-panel" aria-label="Mobile navigation">
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_main">Navigate</div>
+        <div class="mobile-nav-list">
+          <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+          <a href="reproductive-system.html" data-i18n="nav_repro">Anatomy &amp; Cycle</a>
+          <a href="faqs.html" data-i18n="nav_faqs">FAQs</a>
+          <a href="find-help.html" data-i18n="nav_findhelp">Find Help</a>
+        </div>
+      </div>
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_conditions">Health Topics</div>
+        <div class="mobile-nav-list">
+          <a href="conditions/pcos.html" data-i18n="cond_pcos">PCOS</a>
+          <a href="conditions/endometriosis.html" data-i18n="cond_endo">Endometriosis</a>
+          <a href="conditions/menstrual-health.html" data-i18n="cond_menstrual">Menstrual Health</a>
+          <a href="conditions/fertility.html" data-i18n="cond_fertility">Fertility</a>
+          <a href="conditions/pregnancy.html" data-i18n="cond_pregnancy">Pregnancy</a>
+          <a href="conditions/contraception.html" data-i18n="cond_contraception">Contraception</a>
+          <a href="conditions/cervical-cancer.html" data-i18n="cond_cervical">Cervical Cancer</a>
+          <a href="conditions/menopause.html" data-i18n="cond_menopause">Menopause</a>
+        </div>
+      </div>
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_lang">Language</div>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero_eyebrow">Bilingual Women's Health · English &amp; Kiswahili</span>
+          <h1 id="heroHeading">
+            <span data-i18n="hero_title_1">Clear, trusted reproductive health guidance </span>
+            <em data-i18n="hero_title_em">in your language.</em>
+          </h1>
+          <p class="hero-lead" data-i18n="hero_subtitle">
+            Understand your cycle, recognise symptoms early, and weigh your medical options with plain-language guides written in English and Kiswahili.
+          </p>
+          <div class="hero-actions">
+            <a href="#conditions" class="btn btn-primary">
+              <span data-i18n="hero_cta1">Browse Health Topics</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="reproductive-system.html" class="btn btn-secondary" data-i18n="hero_cta2">Anatomy &amp; Cycle Guide</a>
+          </div>
+          <div class="hero-meta" aria-label="Editorial highlights">
+            <div class="hero-meta-item">
+              <strong data-i18n="hero_meta_1_val">8 Guides</strong>
+              <span data-i18n="hero_meta_1_lbl">Reviewed clinical topics</span>
+            </div>
+            <div class="hero-meta-item">
+              <strong data-i18n="hero_meta_2_val">EN &amp; SW</strong>
+              <span data-i18n="hero_meta_2_lbl">Switch language anytime</span>
+            </div>
+            <div class="hero-meta-item">
+              <strong data-i18n="hero_meta_3_val">WHO · CDC · NHS</strong>
+              <span data-i18n="hero_meta_3_lbl">Evidence-referenced</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-photo-frame">
+            <img src="assets/images/doctors_help.jpg" alt="A female clinician discussing reproductive health options with a patient in a bright consultation room" />
+          </div>
+          <div class="hero-note-card">
+            <div>
+              <small data-i18n="hero_card_label">East Africa Support</small>
+              <p data-i18n="hero_card_title">Need a clinic, specialist directory, or Kenya health hotline?</p>
+            </div>
+            <a href="find-help.html" class="hero-note-link">
+              <span data-i18n="hero_card_link">Find help</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="conditions" aria-labelledby="conditionsHeading">
+      <div class="container">
+        <div class="section-top">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="conditions_eyebrow">Health Directory</span>
+            <h2 id="conditionsHeading" data-i18n="conditions_title">Explore reproductive health topics</h2>
+            <p data-i18n="conditions_sub">Search by symptom or choose a guide below. Every article is available in both English and Kiswahili.</p>
+          </div>
+          <div class="search-field">
+            <svg class="search-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="search" id="topicSearch" class="search-input" data-i18n="search_placeholder"
+              placeholder="Search symptoms or topics..." aria-label="Search health topics or symptoms" />
+            <button type="button" id="topicSearchClear" class="search-clear" aria-label="Clear search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter health topics by category">
+          <button type="button" class="filter-chip active" data-topic-filter="all" aria-pressed="true" data-i18n="filter_all">All topics</button>
+          <button type="button" class="filter-chip" data-topic-filter="cycle" aria-pressed="false" data-i18n="filter_cycle">Periods &amp; pain</button>
+          <button type="button" class="filter-chip" data-topic-filter="hormones" aria-pressed="false" data-i18n="filter_hormones">Hormones &amp; midlife</button>
+          <button type="button" class="filter-chip" data-topic-filter="family" aria-pressed="false" data-i18n="filter_family">Fertility &amp; planning</button>
+          <button type="button" class="filter-chip" data-topic-filter="care" aria-pressed="false" data-i18n="filter_care">Screening &amp; care</button>
+        </div>
+
+        <div class="topics-grid" id="topicsGrid">
+          <article class="topic-card reveal" data-category="hormones cycle"
+            data-search="pcos polycystic ovary syndrome irregular periods hormones acne hair insulin weight fertility hedhi homoni">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_hormones">Hormonal health</span>
+              <span class="topic-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="8" />
+                  <circle cx="9.5" cy="10.5" r="1.5" />
+                  <circle cx="14.5" cy="10.5" r="1.5" />
+                  <circle cx="12" cy="14.5" r="1.5" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_pcos_title">PCOS</h3>
+            <p data-i18n="card_pcos_desc">Polycystic Ovary Syndrome: hormonal symptoms, Rotterdam diagnosis criteria, and practical ways to manage it.</p>
+            <a href="conditions/pcos.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="cycle"
+            data-search="endometriosis uterus pelvic pain cramps heavy periods fertility laparoscopy maumivu nyonga">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_pelvic">Pelvic health</span>
+              <span class="topic-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v18" />
+                  <path d="M5 9c2.5-3 5.5-3 7 0 1.5-3 4.5-3 7 0" />
+                  <circle cx="6" cy="13.5" r="2" />
+                  <circle cx="18" cy="13.5" r="2" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_endo_title">Endometriosis</h3>
+            <p data-i18n="card_endo_desc">Why uterine-like tissue causes pelvic pain, how it is diagnosed, and medical or surgical options.</p>
+            <a href="conditions/endometriosis.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="cycle"
+            data-search="menstrual health periods cycle cramps heavy bleeding hygiene tracking spotting pads tampons hedhi usafi">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_cycle">Cycle care</span>
+              <span class="topic-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="16" rx="2" />
+                  <line x1="16" y1="3" x2="16" y2="7" />
+                  <line x1="8" y1="3" x2="8" y2="7" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_menstrual_title">Menstrual Health</h3>
+            <p data-i18n="card_menstrual_desc">What counts as a typical cycle, warning signs of heavy bleeding, hygiene basics, and cycle tracking.</p>
+            <a href="conditions/menstrual-health.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="family"
+            data-search="fertility ovulation conceive fertile window trying infertility ivf iui folic acid uzazi rutuba">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_conception">Conception</span>
+              <span class="topic-icon sage" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21V9" />
+                  <path d="M12 12c0-4-3-7-7-7 0 4 3 7 7 7Z" />
+                  <path d="M12 10c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6Z" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_fertility_title">Fertility</h3>
+            <p data-i18n="card_fertility_desc">How ovulation and the fertile window work, preconception health, and when to see a specialist.</p>
+            <a href="conditions/fertility.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="family care"
+            data-search="pregnancy prenatal antenatal trimester baby maternal preeclampsia warning signs clinic ujauzito mimba">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_maternal">Maternal care</span>
+              <span class="topic-icon ochre" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="7" r="3" />
+                  <path d="M7 21v-3a5 5 0 0 1 10 0v3" />
+                  <path d="M12 13.5v3" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_pregnancy_title">Pregnancy</h3>
+            <p data-i18n="card_pregnancy_desc">Week-by-week trimesters, essential antenatal check-ups, and emergency warning signs to act on.</p>
+            <a href="conditions/pregnancy.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="family"
+            data-search="contraception birth control pill condom implant injection iud copper coil morning after family planning uzazi wa mpango">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_planning">Family planning</span>
+              <span class="topic-icon sage" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l7 3v5c0 5-3.2 8.7-7 10-3.8-1.3-7-5-7-10V6l7-3Z" />
+                  <polyline points="9 12 11 14 15 10" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_contraception_title">Contraception</h3>
+            <p data-i18n="card_contraception_desc">Clear, judgment-free comparisons of pills, implants, IUDs, injections, condoms, and emergency options.</p>
+            <a href="conditions/contraception.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="care"
+            data-search="cervical cancer hpv vaccine vaccination pap smear screening prevention bleeding saratani mlango wa kizazi">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_prevention">Prevention</span>
+              <span class="topic-icon sage" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="M11 8v6M8 11h6" />
+                  <line x1="20" y1="20" x2="16.2" y2="16.2" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_cervical_title">Cervical Cancer</h3>
+            <p data-i18n="card_cervical_desc">How HPV vaccination and routine Pap or HPV screening prevent most cervical cancers.</p>
+            <a href="conditions/cervical-cancer.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="topic-card reveal" data-category="hormones care"
+            data-search="menopause perimenopause hot flashes night sweats hrt hormones midlife dryness kukoma hedhi">
+            <div class="topic-card-top">
+              <span class="topic-cat" data-i18n="cat_midlife">Midlife health</span>
+              <span class="topic-icon ochre" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1L7 17M17 7l2.1-2.1" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="card_menopause_title">Menopause</h3>
+            <p data-i18n="card_menopause_desc">Navigating perimenopause, hot flushes, mood shifts, HRT, and long-term bone and heart health.</p>
+            <a href="conditions/menopause.html" class="card-link">
+              <span data-i18n="read_guide">Read guide</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+        </div>
+
+        <div class="empty-state" id="noResults" role="status" aria-live="polite">
+          <p data-i18n="no_results">No matching health topics found. Try clearing your search or selecting another category.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="spotlightHeading">
+      <div class="container spotlight-grid">
+        <div class="spotlight-copy">
+          <span class="eyebrow eyebrow-sage" data-i18n="spotlight_eyebrow">Foundations</span>
+          <h2 id="spotlightHeading" data-i18n="spotlight_title">Start with how your body works</h2>
+          <p data-i18n="spotlight_desc">
+            Before diving into specific conditions, explore an interactive guide to female reproductive anatomy, the four phases of the menstrual cycle, and the hormones guiding them.
+          </p>
+          <a href="reproductive-system.html" class="btn btn-primary">
+            <span data-i18n="spotlight_cta">Open Anatomy &amp; Cycle Guide</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="phase-strip">
+          <div class="phase-tile">
+            <span class="phase-days" data-i18n="phase_1_days">Days 1–5</span>
+            <h3 data-i18n="phase_1_title">Menstruation</h3>
+            <p data-i18n="phase_1_desc">The uterine lining sheds as oestrogen and progesterone reach their lowest point.</p>
+          </div>
+          <div class="phase-tile p-follicular">
+            <span class="phase-days" data-i18n="phase_2_days">Days 6–13</span>
+            <h3 data-i18n="phase_2_title">Follicular Phase</h3>
+            <p data-i18n="phase_2_desc">FSH matures ovarian follicles while rising oestrogen rebuilds the uterine lining.</p>
+          </div>
+          <div class="phase-tile p-ovulation">
+            <span class="phase-days" data-i18n="phase_3_days">Day 14</span>
+            <h3 data-i18n="phase_3_title">Ovulation</h3>
+            <p data-i18n="phase_3_desc">A mid-cycle surge in LH releases a mature egg, creating peak fertility.</p>
+          </div>
+          <div class="phase-tile p-luteal">
+            <span class="phase-days" data-i18n="phase_4_days">Days 15–28</span>
+            <h3 data-i18n="phase_4_title">Luteal Phase</h3>
+            <p data-i18n="phase_4_desc">Progesterone rises to prepare for implantation, then drops if pregnancy does not occur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="teamHeading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="team_eyebrow">Editorial Team</span>
+          <h2 id="teamHeading" data-i18n="team_title">The collaborators behind ReproCare</h2>
+          <p data-i18n="team_sub">Four contributors working together to keep every guide medically grounded, accessible, and easy to read.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member-card reveal">
+            <div class="member-monogram" aria-hidden="true">CM</div>
+            <h3>Dr. Charity Murugi</h3>
+            <p class="member-role" data-i18n="role_founder">Founder</p>
+            <p class="member-cred" data-i18n="role_med_student">Medical Student</p>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-monogram sage" aria-hidden="true">CI</div>
+            <h3>Chidiebere Isabel</h3>
+            <p class="member-role" data-i18n="role_content">Content Strategy &amp; Editing</p>
+            <p class="member-cred" data-i18n="role_med_student">Medical Student</p>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-monogram stone" aria-hidden="true">BO</div>
+            <h3>Brighton Ooko</h3>
+            <p class="member-role" data-i18n="role_ux">UX &amp; Accessibility</p>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-monogram ochre" aria-hidden="true">LN</div>
+            <h3>Lizzy Ngemera</h3>
+            <p class="member-role" data-i18n="role_organiser">Organiser</p>
+            <p class="member-cred" data-i18n="role_med_student">Medical Student</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" aria-labelledby="faqHeading">
+      <div class="container faq-split">
+        <div class="faq-intro">
+          <span class="eyebrow" data-i18n="faq_eyebrow">Common Questions</span>
+          <h2 id="faqHeading" data-i18n="faq_title">Frequently asked questions</h2>
+          <p data-i18n="faq_sub">Direct, evidence-based answers to questions women ask most often about their cycles, hormones, and care.</p>
+          <a href="faqs.html" class="btn btn-secondary">
+            <span data-i18n="view_all_faqs">Read all FAQs</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="accordion" id="homeFaq">
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              <span class="en-text">What is the menstrual cycle and what counts as normal?</span>
+              <span class="sw-text" style="display:none;">Mzunguko wa hedhi ni nini na upi ni wa kawaida?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p class="en-text">A typical menstrual cycle lasts between 21 and 35 days, with periods lasting 2 to 7 days. Flow varies from person to person. Speak with a healthcare provider if your cycle regularly falls outside this window, or if you have very heavy bleeding or severe pain.</p>
+                <p class="sw-text" style="display:none;">Mzunguko wa kawaida wa hedhi ni kati ya siku 21 na 35, na hedhi hudumu siku 2 hadi 7. Kiasi cha damu hutofautiana kati ya wanawake. Wasiliana na mtaalamu wa afya ikiwa mzunguko wako unatoka nje ya kipindi hiki mara kwa mara, au una damu nyingi sana au maumivu makali.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              <span class="en-text">How is PCOS diagnosed?</span>
+              <span class="sw-text" style="display:none;">PCOS inatambuliwaje na daktari?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p class="en-text">Clinicians diagnose PCOS using a combination of symptom history, hormone blood tests, and sometimes a pelvic ultrasound. Common signs include irregular periods, acne, excess facial or body hair, and metabolic changes. Read our <a href="conditions/pcos.html">PCOS guide</a> for details.</p>
+                <p class="sw-text" style="display:none;">Madaktari hutambua PCOS kwa kuchanganya historia ya dalili, vipimo vya damu vya homoni, na wakati mwingine ultrasound. Dalili za kawaida ni hedhi zisizo za kawaida, chunusi, nywele nyingi mwilini, na mabadiliko ya uzito. Soma <a href="conditions/pcos.html">mwongozo wetu wa PCOS</a> kwa undani.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              <span class="en-text">Is it safe to use contraception long term?</span>
+              <span class="sw-text" style="display:none;">Je, ni salama kutumia uzazi wa mpango kwa muda mrefu?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p class="en-text">Most contraceptive methods are safe for long-term use and do not harm future fertility. The best fit depends on your medical history, age, and family plans. Compare methods in our <a href="conditions/contraception.html">Contraception guide</a>.</p>
+                <p class="sw-text" style="display:none;">Njia nyingi za uzazi wa mpango ni salama kwa matumizi ya muda mrefu na haziharibu uwezo wa kupata mimba baadaye. Chaguo bora linategemea afya yako, umri, na mipango ya familia. Linganisha njia kwenye <a href="conditions/contraception.html">mwongozo wa Uzazi wa Mpango</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              <span class="en-text">When should I see a doctor about my periods?</span>
+              <span class="sw-text" style="display:none;">Nimuone daktari lini kuhusu hedhi yangu?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p class="en-text">Seek medical review if you soak through a pad or tampon every hour, bleed for more than 7 days, miss periods for 3 or more months without being pregnant, bleed between cycles, or have pain that disrupts daily life.</p>
+                <p class="sw-text" style="display:none;">Muone daktari ikiwa unalowesha pedi au tampon kila saa, hedhi inadumu zaidi ya siku 7, unakosa hedhi kwa miezi 3 au zaidi bila ujauzito, unatokwa damu kati ya hedhi, au una maumivu yanayozuia shughuli zako.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="supportHeading">
+      <div class="container">
+        <div class="support-card">
+          <div>
+            <span class="eyebrow eyebrow-light" data-i18n="support_eyebrow">Clinics &amp; References</span>
+            <h2 id="supportHeading" data-i18n="support_title">Looking for care in East Africa or verified medical sources?</h2>
+            <p data-i18n="support_desc">Access vetted Kenyan reproductive health organisations, WHO and CDC clinical references, and direct emergency hotline numbers.</p>
+          </div>
+          <div class="support-actions">
+            <a href="find-help.html" class="btn btn-light">
+              <span data-i18n="support_cta">Open Find Help Directory</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <p class="support-hotline">
+              <span data-i18n="support_hotline_label">Kenya Emergency Services:</span>
+              <a href="tel:999"><strong>999</strong></a> · <a href="tel:116"><strong>116</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" aria-label="ReproCare Home">
+            <span class="brand-emblem" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20.5C7.6 17.4 5 14 5 10.4 5 7.2 7.4 5 10.1 5c1.2 0 1.9.7 1.9.7S12.7 5 13.9 5C16.6 5 19 7.2 19 10.4c0 3.6-2.6 7-7 10.1Z" />
+                <path d="M12 9v4.5M9.75 11.25h4.5" />
+              </svg>
+            </span>
+            <span class="brand-wordmark">Repro<em>Care</em></span>
+          </a>
+          <p data-i18n="footer_desc">Plain-language reproductive health education for women across East Africa, in English and Kiswahili.</p>
+          <div class="social-row" aria-label="Social media">
+            <a href="find-help.html#contact" class="social-btn" aria-label="Email ReproCare">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><polyline points="3 7 12 13 21 7" /></svg>
+            </a>
+            <a href="find-help.html#contact" class="social-btn" aria-label="WhatsApp support">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5Z" /></svg>
+            </a>
+            <a href="find-help.html#references" class="social-btn" aria-label="Clinical references">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_explore">Explore</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="reproductive-system.html" data-i18n="nav_repro">Anatomy &amp; Cycle</a></li>
+            <li><a href="faqs.html" data-i18n="nav_faqs">FAQs</a></li>
+            <li><a href="find-help.html" data-i18n="nav_findhelp">Find Help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_conditions">Conditions</h4>
+          <ul>
+            <li><a href="conditions/pcos.html" data-i18n="cond_pcos">PCOS</a></li>
+            <li><a href="conditions/endometriosis.html" data-i18n="cond_endo">Endometriosis</a></li>
+            <li><a href="conditions/menstrual-health.html" data-i18n="cond_menstrual">Menstrual Health</a></li>
+            <li><a href="conditions/fertility.html" data-i18n="cond_fertility">Fertility</a></li>
+            <li><a href="conditions/pregnancy.html" data-i18n="cond_pregnancy">Pregnancy</a></li>
+            <li><a href="conditions/contraception.html" data-i18n="cond_contraception">Contraception</a></li>
+            <li><a href="conditions/cervical-cancer.html" data-i18n="cond_cervical">Cervical Cancer</a></li>
+            <li><a href="conditions/menopause.html" data-i18n="cond_menopause">Menopause</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_support">Support &amp; Language</h4>
+          <ul>
+            <li><a href="find-help.html#emergency" data-i18n="nav_findhelp">Find Help</a></li>
+            <li><a href="faqs.html" data-i18n="nav_faqs">FAQs</a></li>
+          </ul>
+          <div class="footer-lang">
+            <div class="lang-switch" role="group" aria-label="Language selector">
+              <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2026 ReproCare. All rights reserved.</p>
+        <p class="footer-disclaimer" data-i18n="footer_disclaimer">General educational information only. Always seek guidance from a qualified healthcare professional for personal medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

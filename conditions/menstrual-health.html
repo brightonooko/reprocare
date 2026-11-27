@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menstrual Health — ReproCare</title>
+  <meta name="description"
+    content="Understand normal vs abnormal periods, painful cramps, menstrual hygiene, and cycle tracking in English and Kiswahili." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Skip to main content</a>
+
+  <div class="notice-bar" role="note">
+    <div class="container notice-bar-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" />
+      </svg>
+      <p data-i18n="disclaimer_text">ReproCare provides educational health information only and is not a substitute for professional medical advice. Always consult a qualified healthcare provider.</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-link" aria-label="ReproCare Home">
+        <span class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20.5C7.6 17.4 5 14 5 10.4 5 7.2 7.4 5 10.1 5c1.2 0 1.9.7 1.9.7S12.7 5 13.9 5C16.6 5 19 7.2 19 10.4c0 3.6-2.6 7-7 10.1Z" />
+            <path d="M12 9v4.5M9.75 11.25h4.5" />
+          </svg>
+        </span>
+        <span class="brand-wordmark">Repro<em>Care</em></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a href="../reproductive-system.html" class="nav-link" data-i18n="nav_repro">Anatomy &amp; Cycle</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="../index.html#conditions" class="nav-link active dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              <span data-i18n="nav_conditions">Conditions</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown-panel">
+                <a href="pcos.html" class="dropdown-link"><strong data-i18n="cond_pcos">PCOS</strong><span data-i18n="cond_pcos_short">Hormones, cysts &amp; cycle balance</span></a>
+                <a href="endometriosis.html" class="dropdown-link"><strong data-i18n="cond_endo">Endometriosis</strong><span data-i18n="cond_endo_short">Pelvic pain &amp; treatment options</span></a>
+                <a href="menstrual-health.html" class="dropdown-link active"><strong data-i18n="cond_menstrual">Menstrual Health</strong><span data-i18n="cond_menstrual_short">Normal periods, care &amp; tracking</span></a>
+                <a href="fertility.html" class="dropdown-link"><strong data-i18n="cond_fertility">Fertility</strong><span data-i18n="cond_fertility_short">Ovulation &amp; conception support</span></a>
+                <a href="pregnancy.html" class="dropdown-link"><strong data-i18n="cond_pregnancy">Pregnancy</strong><span data-i18n="cond_pregnancy_short">Trimesters &amp; antenatal care</span></a>
+                <a href="contraception.html" class="dropdown-link"><strong data-i18n="cond_contraception">Contraception</strong><span data-i18n="cond_contraception_short">Compare family planning methods</span></a>
+                <a href="cervical-cancer.html" class="dropdown-link"><strong data-i18n="cond_cervical">Cervical Cancer</strong><span data-i18n="cond_cervical_short">HPV vaccination &amp; screening</span></a>
+                <a href="menopause.html" class="dropdown-link"><strong data-i18n="cond_menopause">Menopause</strong><span data-i18n="cond_menopause_short">Perimenopause &amp; midlife health</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../faqs.html" class="nav-link" data-i18n="nav_faqs">FAQs</a></li>
+          <li class="nav-item"><a href="../find-help.html" class="nav-link" data-i18n="nav_findhelp">Find Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+        </div>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-drawer-panel" aria-label="Mobile navigation">
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_main">Navigate</div>
+        <div class="mobile-nav-list">
+          <a href="../index.html" data-i18n="nav_home">Home</a>
+          <a href="../reproductive-system.html" data-i18n="nav_repro">Anatomy &amp; Cycle</a>
+          <a href="../faqs.html" data-i18n="nav_faqs">FAQs</a>
+          <a href="../find-help.html" data-i18n="nav_findhelp">Find Help</a>
+        </div>
+      </div>
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_conditions">Health Topics</div>
+        <div class="mobile-nav-list">
+          <a href="pcos.html" data-i18n="cond_pcos">PCOS</a>
+          <a href="endometriosis.html" data-i18n="cond_endo">Endometriosis</a>
+          <a href="menstrual-health.html" class="active" data-i18n="cond_menstrual">Menstrual Health</a>
+          <a href="fertility.html" data-i18n="cond_fertility">Fertility</a>
+          <a href="pregnancy.html" data-i18n="cond_pregnancy">Pregnancy</a>
+          <a href="contraception.html" data-i18n="cond_contraception">Contraception</a>
+          <a href="cervical-cancer.html" data-i18n="cond_cervical">Cervical Cancer</a>
+          <a href="menopause.html" data-i18n="cond_menopause">Menopause</a>
+        </div>
+      </div>
+      <div>
+        <div class="mobile-group-label" data-i18n="mobile_menu_lang">Language</div>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html" data-i18n="breadcrumb_home">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <a href="../index.html#conditions" data-i18n="breadcrumb_conditions">Conditions</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span data-i18n="cond_menstrual">Menstrual Health</span>
+        </nav>
+        <span class="eyebrow" data-i18n="cat_cycle">Cycle care</span>
+        <h1>
+          <span class="en-text">Menstrual Health</span>
+          <span class="sw-text" style="display:none;">Afya ya Hedhi</span>
+        </h1>
+        <p class="page-header-lead">
+          <span class="en-text">Knowing what a healthy period looks like — and when changes deserve attention — is a vital part of everyday health.</span>
+          <span class="sw-text" style="display:none;">Kuelewa mzunguko wa hedhi ulio salama — na wakati mabadiliko yanahitaji uangalizi — ni sehemu muhimu ya afya yako.</span>
+        </p>
+      </div>
+    </section>
+
+    <div class="article-wrap">
+      <div class="container article-layout">
+        <aside class="article-sidebar" aria-label="Section navigation">
+          <div class="toc-box">
+            <div class="toc-title" data-i18n="sidebar_toc">On this page</div>
+            <ul class="toc-list">
+              <li><a href="#normal" class="active"><span class="en-text">What Is Normal</span><span class="sw-text" style="display:none;">Hedhi ya Kawaida</span></a></li>
+              <li><a href="#warning"><span class="en-text">When to See a Doctor</span><span class="sw-text" style="display:none;">Ishara za Tahadhari</span></a></li>
+              <li><a href="#care"><span class="en-text">Hygiene &amp; Tracking</span><span class="sw-text" style="display:none;">Usafi na Kufuatilia</span></a></li>
+              <li><a href="#faqs"><span class="en-text">Common Questions</span><span class="sw-text" style="display:none;">Maswali</span></a></li>
+            </ul>
+          </div>
+          <div class="sidebar-help">
+            <h4 data-i18n="sidebar_help_title">Have a health concern?</h4>
+            <p data-i18n="sidebar_help_desc">Find clinics, specialist societies, and free health hotlines in Kenya.</p>
+            <a href="../find-help.html" class="btn btn-secondary btn-sm" data-i18n="sidebar_help_cta">Find Help</a>
+          </div>
+        </aside>
+
+        <div class="article-body">
+          <section class="article-section" id="normal">
+            <h2>
+              <span class="en-text">What is a normal period?</span>
+              <span class="sw-text" style="display:none;">Hedhi ya kawaida ni nini?</span>
+            </h2>
+            <p class="en-text">A menstrual cycle is counted from the first day of one period to the first day of the next. Typical adult cycles last 21 to 35 days, and periods usually last 2 to 7 days with an average total blood loss of 30–80 ml.</p>
+            <p class="sw-text" style="display:none;">Mzunguko wa hedhi huhesabiwa kutoka siku ya kwanza ya hedhi moja hadi siku ya kwanza ya hedhi inayofuata. Mzunguko wa kawaida ni siku 21 hadi 35, na hedhi hudumu siku 2 hadi 7 kwa kiasi cha damu 30–80 ml.</p>
+
+            <ul class="clinical-list positive">
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg></span>
+                <div>
+                  <strong class="en-text">Cycle length: 21–35 days</strong>
+                  <strong class="sw-text" style="display:none;">Urefu wa mzunguko: siku 21–35</strong>
+                  <p class="en-text">Small shifts of a few days between months are common and healthy.</p>
+                  <p class="sw-text" style="display:none;">Tofauti ndogo ya siku chache kati ya miezi ni ya kawaida.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg></span>
+                <div>
+                  <strong class="en-text">Bleeding duration: 2–7 days</strong>
+                  <strong class="sw-text" style="display:none;">Muda wa hedhi: siku 2–7</strong>
+                  <p class="en-text">Flow is often heavier during the first two days before tapering off.</p>
+                  <p class="sw-text" style="display:none;">Mtiririko mara nyingi huwa mzito siku mbili za kwanza kisha hupungua.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg></span>
+                <div>
+                  <strong class="en-text">Typical volume: 30–80 ml</strong>
+                  <strong class="sw-text" style="display:none;">Kiasi cha damu: 30–80 ml</strong>
+                  <p class="en-text">Roughly 4 to 12 fully soaked regular pads or tampons across the entire period.</p>
+                  <p class="sw-text" style="display:none;">Takriban pedi au tampon 4 hadi 12 zilizolowea kikamilifu katika kipindi chote cha hedhi.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg></span>
+                <div>
+                  <strong class="en-text">Normal colour range</strong>
+                  <strong class="sw-text" style="display:none;">Rangi ya kawaida</strong>
+                  <p class="en-text">Bright red, dark red, and brown blood are all normal at different stages of your period.</p>
+                  <p class="sw-text" style="display:none;">Nyekundu angavu hadi kahawia giza — zote ni za kawaida katika hatua tofauti za hedhi.</p>
+                </div>
+              </li>
+            </ul>
+
+            <figure class="medical-figure">
+              <img src="../assets/images/menstrual_cycle.jpg" alt="Chart illustrating hormonal fluctuations and endometrial lining thickness across a 28-day menstrual cycle" loading="lazy" />
+              <figcaption>
+                <span class="en-text">Hormone trends (oestrogen, LH, progesterone, FSH) and uterine lining changes across the follicular, ovulatory, and luteal phases.</span>
+                <span class="sw-text" style="display:none;">Mabadiliko ya homoni na unene wa ukuta wa kizazi katika mzunguko wa siku 28.</span>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="article-section" id="warning">
+            <h2>
+              <span class="en-text">When to seek medical advice</span>
+              <span class="sw-text" style="display:none;">Wakati wa kumuona daktari</span>
+            </h2>
+            <p class="en-text">Speak with a healthcare provider if you notice any of these signs:</p>
+            <p class="sw-text" style="display:none;">Wasiliana na mtaalamu wa afya ukiona mojawapo ya dalili hizi:</p>
+
+            <ul class="clinical-list urgent">
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg></span>
+                <div>
+                  <strong class="en-text">Very heavy bleeding</strong>
+                  <strong class="sw-text" style="display:none;">Kutokwa damu nyingi sana</strong>
+                  <p class="en-text">Soaking through a pad or tampon every hour for several consecutive hours, or passing large clots.</p>
+                  <p class="sw-text" style="display:none;">Kulowesha pedi au tampon kila saa kwa masaa kadhaa mfululizo.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg></span>
+                <div>
+                  <strong class="en-text">Periods lasting longer than 7 days</strong>
+                  <strong class="sw-text" style="display:none;">Hedhi inayodumu zaidi ya siku 7</strong>
+                  <p class="en-text">Prolonged heavy bleeding (menorrhagia) can lead to iron-deficiency anaemia and should be evaluated.</p>
+                  <p class="sw-text" style="display:none;">Hedhi ndefu kupita kiasi inaweza kusababisha upungufu wa damu na inapaswa kuchunguzwa.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg></span>
+                <div>
+                  <strong class="en-text">No period for 3 or more months</strong>
+                  <strong class="sw-text" style="display:none;">Kukosa hedhi kwa miezi 3 au zaidi</strong>
+                  <p class="en-text">When not pregnant, absent periods (amenorrhoea) may point to PCOS, thyroid disorders, or hormonal imbalance.</p>
+                  <p class="sw-text" style="display:none;">Ikiwa si mjamzito, kukosa hedhi kunaweza kuashiria PCOS, matatizo ya tezi, au mabadiliko ya homoni.</p>
+                </div>
+              </li>
+              <li>
+                <span class="list-marker" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg></span>
+                <div>
+                  <strong class="en-text">Severe pain or bleeding between periods</strong>
+                  <strong class="sw-text" style="display:none;">Maumivu makali au kutokwa damu kati ya hedhi</strong>
+                  <p class="en-text">Cramps that prevent normal daily activities or do not respond to painkillers, as well as bleeding between cycles or after sex.</p>
+                  <p class="sw-text" style="display:none;">Maumivu yanayozuia shughuli za kila siku, au kutokwa damu nje ya siku za hedhi.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="article-section" id="care">
+            <h2>
+              <span class="en-text">Menstrual hygiene &amp; cycle tracking</span>
+              <span class="sw-text" style="display:none;">Usafi wa hedhi na kufuatilia mzunguko</span>
+            </h2>
+            <div class="card-grid-2">
+              <div class="editorial-card">
+                <span class="card-num">01</span>
+                <h3><span class="en-text">Menstrual hygiene</span><span class="sw-text" style="display:none;">Usafi wa hedhi</span></h3>
+                <ul class="card-bullets">
+                  <li><span class="en-text">Change pads or tampons every 4–8 hours to prevent irritation, odour, and infection.</span><span class="sw-text" style="display:none;">Badilisha pedi au tampon kila masaa 4–8 kuzuia maambukizi na harufu.</span></li>
+                  <li><span class="en-text">Wash the external genital area daily with plain clean water.</span><span class="sw-text" style="display:none;">Osha eneo la nje la sehemu za siri kila siku kwa maji safi.</span></li>
+                  <li><span class="en-text">Avoid douching or scented soaps inside the vagina — they disrupt natural protective pH.</span><span class="sw-text" style="display:none;">Epuka bidhaa zenye harufu ndani ya uke — zinaathiri pH yake ya asili.</span></li>
+                  <li><span class="en-text">Well-washed reusable cloth pads and medical-grade menstrual cups are safe, sustainable options.</span><span class="sw-text" style="display:none;">Pedi za nguo safi na vikombe vya hedhi ni chaguzi salama na endelevu.</span></li>
+                </ul>
+              </div>
+
+              <div class="editorial-card">
+                <span class="card-num">02</span>
+                <h3><span class="en-text">Tracking your cycle</span><span class="sw-text" style="display:none;">Kufuatilia mzunguko wako</span></h3>
+                <ul class="card-bullets">
+                  <li><span class="en-text">Mark Day 1 (the first day of bleeding) each month on a paper calendar or app like Clue or Flo.</span><span class="sw-text" style="display:none;">Andika siku ya kwanza ya kila hedhi kwenye kalenda au programu kama Clue au Flo.</span></li>
+                  <li><span class="en-text">Note daily flow intensity (light, medium, heavy) and how often you change products.</span><span class="sw-text" style="display:none;">Rekodi uzito wa mtiririko kila siku (mwepesi, wastani, mzito).</span></li>
+                  <li><span class="en-text">Log pelvic pain, headaches, energy dips, or spotting between periods.</span><span class="sw-text" style="display:none;">Fuatilia maumivu, mabadiliko ya hisia, au madoa ya damu kati ya hedhi.</span></li>
+                  <li><span class="en-text">Bring your cycle log to medical visits — it speeds up accurate diagnosis.</span><span class="sw-text" style="display:none;">Beba rekodi zako unapoenda kliniki — humsaidia daktari wako.</span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="article-section" id="faqs">
+            <h2>
+              <span class="en-text">Common questions</span>
+              <span class="sw-text" style="display:none;">Maswali ya kawaida</span>
+            </h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button type="button" class="accordion-trigger" aria-expanded="false">
+                  <span class="en-text">Is period pain normal?</span>
+                  <span class="sw-text" style="display:none;">Je, maumivu ya hedhi ni ya kawaida?</span>
+                  <span class="accordion-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    <p class="en-text">Mild cramping is normal as the uterus contracts to shed its lining. Severe pain that stops daily activities is not normal and should be investigated for causes like endometriosis or fibroids.</p>
+                    <p class="sw-text" style="display:none;">Maumivu madogo ya tumbo ni ya kawaida kizazi kinapokazana. Hata hivyo, maumivu makali yanayokuzuia shughuli za kila siku si ya kawaida na yanapaswa kuchunguzwa.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button type="button" class="accordion-trigger" aria-expanded="false">
+                  <span class="en-text">Can I exercise during my period?</span>
+                  <span class="sw-text" style="display:none;">Je, naweza kufanya mazoezi wakati wa hedhi?</span>
+                  <span class="accordion-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></span>
+                </button>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner">
+                    <p class="en-text">Yes. Light to moderate exercise releases endorphins that can ease cramps and lift mood. Listen to your body and rest on days when fatigue or bleeding feels heavier.</p>
+                    <p class="sw-text" style="display:none;">Ndio. Mazoezi mepesi hadi ya wastani husaidia kupunguza maumivu ya tumbo na kuboresha hisia. Sikiliza mwili wako na pumzika unapohitaji.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="related-bar">
+            <h3 data-i18n="related_title">Continue reading</h3>
+            <div class="related-links">
+              <a href="pcos.html" class="related-pill" data-i18n="cond_pcos">PCOS</a>
+              <a href="endometriosis.html" class="related-pill" data-i18n="cond_endo">Endometriosis</a>
+              <a href="fertility.html" class="related-pill" data-i18n="cond_fertility">Fertility</a>
+              <a href="../reproductive-system.html" class="related-pill" data-i18n="nav_repro">Anatomy &amp; Cycle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-link" aria-label="ReproCare Home">
+            <span class="brand-emblem" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20.5C7.6 17.4 5 14 5 10.4 5 7.2 7.4 5 10.1 5c1.2 0 1.9.7 1.9.7S12.7 5 13.9 5C16.6 5 19 7.2 19 10.4c0 3.6-2.6 7-7 10.1Z" />
+                <path d="M12 9v4.5M9.75 11.25h4.5" />
+              </svg>
+            </span>
+            <span class="brand-wordmark">Repro<em>Care</em></span>
+          </a>
+          <p data-i18n="footer_desc">Plain-language reproductive health education for women across East Africa, in English and Kiswahili.</p>
+          <div class="social-row" aria-label="Social media">
+            <a href="../find-help.html#contact" class="social-btn" aria-label="Email ReproCare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><polyline points="3 7 12 13 21 7" /></svg></a>
+            <a href="../find-help.html#contact" class="social-btn" aria-label="WhatsApp support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5Z" /></svg></a>
+            <a href="../find-help.html#references" class="social-btn" aria-label="Clinical references"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_explore">Explore</h4>
+          <ul>
+            <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="../reproductive-system.html" data-i18n="nav_repro">Anatomy &amp; Cycle</a></li>
+            <li><a href="../faqs.html" data-i18n="nav_faqs">FAQs</a></li>
+            <li><a href="../find-help.html" data-i18n="nav_findhelp">Find Help</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_conditions">Conditions</h4>
+          <ul>
+            <li><a href="pcos.html" data-i18n="cond_pcos">PCOS</a></li>
+            <li><a href="endometriosis.html" data-i18n="cond_endo">Endometriosis</a></li>
+            <li><a href="menstrual-health.html" data-i18n="cond_menstrual">Menstrual Health</a></li>
+            <li><a href="fertility.html" data-i18n="cond_fertility">Fertility</a></li>
+            <li><a href="pregnancy.html" data-i18n="cond_pregnancy">Pregnancy</a></li>
+            <li><a href="contraception.html" data-i18n="cond_contraception">Contraception</a></li>
+            <li><a href="cervical-cancer.html" data-i18n="cond_cervical">Cervical Cancer</a></li>
+            <li><a href="menopause.html" data-i18n="cond_menopause">Menopause</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_support">Support &amp; Language</h4>
+          <ul>
+            <li><a href="../find-help.html#emergency" data-i18n="nav_findhelp">Find Help</a></li>
+            <li><a href="../faqs.html" data-i18n="nav_faqs">FAQs</a></li>
+          </ul>
+          <div class="footer-lang">
+            <div class="lang-switch" role="group" aria-label="Language selector">
+              <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false">SW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2026 ReproCare. All rights reserved.</p>
+        <p class="footer-disclaimer" data-i18n="footer_disclaimer">General educational information only. Always seek guidance from a qualified healthcare professional for personal medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
