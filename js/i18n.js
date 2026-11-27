@@ -34,10 +34,10 @@ const translations = {
     cond_menopause_short: "Perimenopause & midlife health",
 
     // Homepage Hero
-    hero_eyebrow: "Bilingual Women's Health · English & Kiswahili",
-    hero_title_1: "Clear, trusted reproductive health guidance ",
-    hero_title_em: "in your language.",
-    hero_subtitle: "Understand your cycle, recognise symptoms early, and weigh your medical options with plain-language guides written in English and Kiswahili.",
+    hero_eyebrow: "Women's Health · English & Kiswahili",
+    hero_title_1: "Clear, trusted reproductive ",
+    hero_title_em: "health guidance.",
+    hero_subtitle: "Understand your cycle, recognise symptoms early, and weigh your medical options with clear guides written in English and Kiswahili.",
     hero_cta1: "Browse Health Topics",
     hero_cta2: "Anatomy & Cycle Guide",
     hero_meta_1_val: "8 Guides",
@@ -143,7 +143,7 @@ const translations = {
     breadcrumb_conditions: "Conditions",
 
     // Footer
-    footer_desc: "Plain-language reproductive health education for women across East Africa, in English and Kiswahili.",
+    footer_desc: "Reproductive health education for women across East Africa, in English and Kiswahili.",
     footer_explore: "Explore",
     footer_conditions: "Conditions",
     footer_support: "Support & Language",
@@ -185,8 +185,8 @@ const translations = {
 
     // Homepage Hero
     hero_eyebrow: "Afya ya Wanawake · Kiingereza na Kiswahili",
-    hero_title_1: "Taarifa sahihi za afya ya uzazi ",
-    hero_title_em: "kwa lugha unayoielewa.",
+    hero_title_1: "Mwongozo sahihi wa ",
+    hero_title_em: "afya ya uzazi.",
     hero_subtitle: "Elewa mzunguko wako, tambua dalili mapema, na jua chaguzi zako za matibabu kupitia miongozo iliyo wazi kwa Kiingereza na Kiswahili.",
     hero_cta1: "Chunguza Mada za Afya",
     hero_cta2: "Mwongozo wa Mfumo wa Uzazi",
@@ -293,7 +293,7 @@ const translations = {
     breadcrumb_conditions: "Hali za Kiafya",
 
     // Footer
-    footer_desc: "Elimu ya afya ya uzazi kwa lugha rahisi kwa wanawake Afrika Mashariki, kwa Kiingereza na Kiswahili.",
+    footer_desc: "Elimu ya afya ya uzazi kwa wanawake Afrika Mashariki, kwa Kiingereza na Kiswahili.",
     footer_explore: "Kurasa",
     footer_conditions: "Hali za Kiafya",
     footer_support: "Msaada na Lugha",
